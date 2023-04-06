@@ -10,7 +10,6 @@ The first tutorial will be followed from [Rust by example](https://doc.rust-lang
 We begin with the `main()` function which takes in no arguments, and is where the execution of the program begins.
 
 To print any text we can use the `println!` macro - in the Rust programming language, macros are defined by an exclamation mark `!` at the end.
-
 ### Cargo
 
 Cargo is Rust's build system and package manager.
