@@ -25,8 +25,7 @@ fn main() {
     // struct Structure(i32);
     // fmt::Display.
     // println!("This struct `{}` won't print...", Structure(3));
-
-
+    // print pi to 3 decimal places.
     let pi = 3.141592;
     println!("Pi is roughly {pi:.3}");
 
