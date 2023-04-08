@@ -63,7 +63,30 @@ Below are some more commands:
 ### Insert mode
 
 Insert mode is the primary mode in which we will be typing, there are two ways we can enter Insert mode:
+
 - `i` to enter Insert mode to the left of your cursor
 - `a` to enter Insert mode to the right of your cursor
 
+In order to leave Insert mode we can use some of the following commands:
+
+- `Esc`
+- `Ctrl + [`
+- `Ctrl + c` 
+
+The last one (`Ctrl + c`) causes some weird behaviour in Visual mode (will be discussed later on)
+
 ### Visual mode 
+
+Visual mode, the last mode to be discussed, is kind of like highlighting and manipulating lines on the screen how often we would usually do with a mouse.
+It has two primary ways we can use it with: 
+
+- The lowercase `v` lets us go into Visual mode and use our previously learnt motions, and automatically highlights the character where the cursor is
+- The capital `V` (`Shift + v`) goes into Visual line mode, and automatically highlights the entire line of where the cursor is.
+
+Once we are in visual mode, here are some commands to use with which we can interact with the text:
+
+- `y` yanks the highlighted area, another word for copy
+- `p` pastes, however differently in the two Visual modes:
+    - In Visual mode normally, it pastes the exact content we copied
+    - In Visual Line mode we paste in a new line.
+    - Also note, that yanking and deleting go to the same buffer, so for example if we use `dd` to delete a line, and then `p` - it will paste the deleted line.
