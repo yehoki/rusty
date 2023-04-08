@@ -19,7 +19,7 @@ This allows the user to insert information/data inside the file, AKA type around
 
 
 
-## Vim commands
+## Vim commands & Vim Motions
 
 Some basic commands to get started.
 
@@ -38,8 +38,32 @@ Despite the numerous memes, all we need to ever quit Vim is `:q`
 
 Just like we can use the arrow keys to move around normally, in normal mode these can be replaced by the following:
 
+Note: We can easily use the arrow keys to move around as well.
+
 - `h` for **LEFT**
 - `j` for **DOWN**
 - `k` for **UP**
 - `l` for **RIGHT** 
 
+On MacOS keyboards, we can skip across words using the <kbd>⌥ Option</kbd> key with a left/right arrow. Similarly, Vim Motions has the same action but using two keys:
+
+- `w` for moving forwards
+- `b` for moving backwards
+
+In Vim, a motion is anything which moves the cursor, and we have the "Command Count Motion" style, we can combine the command with a count to multiply it: for example if we want to move 5 lines down  we can write `5` followed by `j` and it will move down 5 lines. We can combine this with any command in Normal mode, essentially multiplying how much the command will acomplish. 
+
+Below are some more commands:
+
+- `d` for Deleting, `dd` will delete a line 
+    We can use the Command Count Motion here as well, for example if we want to delete the line we are on, as well as the 4 lines below it: `d4j` will do just that for us.
+    Similarly we can delete any number of words ahead, example: 4 words ahead: `d4w`.
+- `u` to Undo the last action
+- `Ctrl + r` redo's the previous action
+
+### Insert mode
+
+Insert mode is the primary mode in which we will be typing, there are two ways we can enter Insert mode:
+- `i` to enter Insert mode to the left of your cursor
+- `a` to enter Insert mode to the right of your cursor
+
+### Visual mode 
