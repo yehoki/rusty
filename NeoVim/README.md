@@ -16,9 +16,6 @@ This allows the user to insert information/data inside the file, AKA type around
 3. Visual mode - in visual mode we can highlight and look around text in the file, kind of like moving your mouse around.
 4. Command mode - allows you to type commands, appears upon pressing `:`
 
-
-
-
 ## Vim commands & Vim Motions
 
 Some basic commands to get started.
